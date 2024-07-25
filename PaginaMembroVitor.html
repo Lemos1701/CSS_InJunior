@@ -4,49 +4,86 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="assets/lobo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>PsInjunior - HTML</title>
 </head>
 <body>
     <header>
-        <h1>Membro Vitor</h1>
+        <div class="header">
+            <div>
+                <h1>MEMBRO VITOR</h1>
+            </div>
+            <div>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+            </div>
+        </div>
     </header>
     <main>
-        <img src="assets/Hollow Knight.gif" alt="" width="200" height="150">
-        <iframe width="200" height="200" src="https://www.youtube.com/embed/mccKRVBE4jw" title="meme do metal caindo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
-        <audio src="assets/City of Tears.mp3" controls></audio>
-        <h2>Descrição</h2>
-        <p>
-            Sou um estudante de 19 anos do terceiro período de Ciência da Computação, morador de Niterói. Desde 
-            pequeno,<br>sempre tive um grande interesse pela área de computação, impulsionado pela minha paixão por 
-            jogos. Ao ingressar na faculdade, <br>rapidamente me apaixonei pela linguagem Python. Esse interesse me 
-            motivou a aprofundar meus estudos na linguagem <br> e a resolver questões no Beecrowd, visando aprimorar 
-            minhas habilidades e domínio sobre Python.
-        </p>
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Academia</li>
-            <li>Ler</li>
-            <li>Fazer questões competitivas de programação</li>
-            <li>Jogar</li>
-            <li>Desenhar</li>
-        </ul>
-        <h2>Top 5</h2>
-        <ol>
-            <li>Academia</li>
-            <li>Stardew Valley</li>
-            <li>Hollow Knight</li>
-            <li>Harry Potter(Livros)</li>
-            <li>Python</li>
-        </ol>
-        <hr>
+        <div class="main">
+            <div class="Top">
+                <img class="hollow" src="assets/Hollow Knight.gif" alt="">
+                <div>
+                    <h2>Descrição</h2> <br>
+                    <p>
+                        Sou um estudante de 19 anos do terceiro período de Ciência da Computação, morador de Niterói. Desde 
+                        pequeno, sempre tive um grande interesse pela área de computação, impulsionado pela minha paixão por 
+                        jogos. Ao ingressar na faculdade, rapidamente me apaixonei pela linguagem Python. Esse interesse me 
+                        motivou a aprofundar meus estudos na linguagem e a resolver questões no Beecrowd, visando aprimorar 
+                        minhas habilidades e domínio sobre Python.
+                    </p>
+                </div>
+            </div>
+            <div class="Bottom">
+                <div class="BlocoHobbie">
+                    <div class="ba">
+                        <h2>Hobbies</h2>
+                        <div class="Top5">
+                            <div>Academia</div>
+                            <div>Ler</div>
+                            <div>Questões competitivas de programação</div>
+                            <div>Jogar</div>
+                            <div>Desenhar</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="BlocoTop5">
+                    <div class="blo">
+                        <h2>Top 5</h2>
+                        <div class="Top5">
+                            <div>
+                                <p>Academia</p>
+                            </div>
+                            <div>
+                                <p>Stardew Valley</p>
+                            </div>
+                            <div>
+                                <p>Hollow Knight</p>
+                            </div>
+                            <div>Harry Potter</div>
+                            <div>Python</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <ul>
-            <li><a href="https://github.com/Lemos1701">GitHub</a></li>
-            <li><a href="https://www.instagram.com/vt_lemos1701/">Instagram</a></li>
-            <li><a href="PaginaContatoVitor.html">Contato</a></li>
-            <li><a href="PaginaPrincipal.html">Pagina inicial</a></li>
-        </ul>
+        <div class="footer">
+            <div class="links">
+                <a href="https://www.instagram.com/vt_lemos1701/">
+                    <img src="assets/intagram.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/Lemos1701">
+                    <img src="assets/github.png" alt="GitHub">
+                </a>
+            </div>
+            <div class="button">
+                <button onclick="location.href='PaginaContatoVitor.html'">Página de Contato</button>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
