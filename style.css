@@ -1,0 +1,255 @@
+/******** GLOBAL *******/
+
+body {
+    background-color: rgb(21, 24, 27);
+    color: rgb(28, 193, 97);
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    color: rgb(21, 24, 27);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/******** MEMBER PAGE *******/
+
+/** HEADER **/
+
+div.header {
+    background-color: rgb(28, 193, 97);
+    height: 20vh;
+    max-height: 70px;
+    display: flex;
+}
+
+div.header > div {
+    line-height: 2; 
+    padding-left: 1%; 
+    color: rgb(21, 24, 27);
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+div.header div + div {
+    margin-left: auto;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+div.header a {
+    line-height: 3;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+/** BODY **/
+
+/* FIRST PART */
+div.Top {
+    margin-left: 20%;
+    margin-top: 3%;
+    display: flex;
+}
+div.Top p {
+    font-size: 1.25rem;
+}
+
+div.Top div{
+    margin-top: 1.5vw;
+    margin-left: 5vw;
+    margin-right: 20vw;
+}
+
+.hollow {
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+}
+
+/* SECOND PART */
+div.Bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    gap: 5vw;
+}
+
+
+div.ba h2 {
+    padding-bottom: 0.5vw;
+}
+div.ba {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+div.blo h2 {
+    padding-bottom: 0.5vw;
+}
+
+div.blo {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+div.Top5 {
+    display: flex;
+    gap: 1vw;
+}
+
+div.Top5 div {
+    border-radius: 15%;
+    padding-top: 3vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.05rem;
+    width: 17vh;
+    height: 20vh;
+    background-color: rgb(28, 193, 97);
+    color: rgb(21, 24, 27);
+}
+
+
+/** FOTER **/
+div.footer {
+    display: flex;
+    background-color: rgb(28, 193, 97);
+    height: auto;
+}
+
+div.links {
+    padding-left: 2vh;
+    gap: 1vh;
+    padding-top: 1vh;
+}
+
+div.footer img{
+    align-items: center;
+    height: 4vh;
+    width: 4vh;
+}
+
+div.button {
+    justify-content: flex-end;
+    flex-grow: 0.99;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 4.5vh;
+    color:  rgb(21, 24, 27);
+    background-color: rgb(30, 116, 66);
+    border-radius: 50px;
+    border: 1px solid rgb(30, 116, 66);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/**** RESPONSIVIDADE ****/
+@media screen and (max-width: 1100px) {
+    /** HEADER **/
+    div.header > div{
+        line-height: 2.5;
+        font-size: 1.75rem;
+    }
+
+    div.header a {
+        font-size: 1rem;
+    }
+
+    /** MAIN **/
+
+    /* FIRST PART */
+    div.Top {
+        flex-direction: column;
+        margin-left: 5vw;
+    }
+    div.Top div {
+        margin-top: 2rem;
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+    .hollow {
+        width: 90vw;
+        height: 90vw;
+        margin-left: 0;
+    }
+    
+    /* SECOND PART */
+    div.Bottom {
+        flex-direction: column;
+        margin-top: 10vh;
+        gap: 25vw;
+    }
+
+    div.ba {
+        align-items: center;
+    }
+
+    div.ba h2 {
+        padding-bottom: 2vw;
+    }
+
+    div.hobbies div{
+        height: 25vh;
+        width: 20vh; 
+    }
+
+    div.blo {
+        align-items: center;
+    }
+
+    div.blo h2 {
+        padding-bottom: 2vw;
+    }
+
+    div.Top5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    div.Top5 div {
+        height: 25vh;
+        width: 20vh; 
+        font-size: 0.8rem;
+        box-sizing: border-box;
+    }
+
+    div.hobbies {
+        display: flex;
+        width: 10vh;
+        height: 8vh;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    div.Top5 {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    div.header > div{
+        line-height: 3.5;
+        font-size: 1.25rem;
+    }
+}
