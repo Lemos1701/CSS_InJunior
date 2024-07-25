@@ -6,22 +6,50 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-a {
-    color: rgb(21, 24, 27);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
-}
-
 h2 {
     font-size: 1.5rem;
+}
+
+nav {
+    position: relative;
 }
 
 /******** MEMBER PAGE *******/
 
 /** HEADER **/
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1vw;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(21, 24, 27);
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: rgb(255, 255, 255);
+}
 
 div.header {
     background-color: rgb(28, 193, 97);
@@ -112,8 +140,11 @@ div.Top5 {
 }
 
 div.Top5 div {
-    border-radius: 15%;
-    padding-top: 3vw;
+    display: flex;
+    border-radius: 15px;
+    padding-bottom: 3%;
+    justify-content: center;
+    align-items: end;
     text-align: center;
     font-weight: bold;
     font-size: 1.05rem;
@@ -152,9 +183,12 @@ div.button {
 
 button {
     height: 4.5vh;
+    width: 15vh;
+    font-size: 1.2rem;
+    font-weight: bold;
     color:  rgb(21, 24, 27);
     background-color: rgb(30, 116, 66);
-    border-radius: 50px;
+    border-radius: 10px;
     border: 1px solid rgb(30, 116, 66);
 }
 
@@ -163,6 +197,29 @@ button:hover {
 }
 
 /**** RESPONSIVIDADE ****/
+@media screen and (max-width: 1432px) {
+    div.Bottom {
+        flex-direction: column;
+    }
+
+    div.ba {
+        align-items: center;
+    }
+
+    div.ba h2 {
+        padding-bottom: 2vw;
+    }
+
+    div.blo {
+        align-items: center;
+    }
+
+    div.blo h2 {
+        padding-bottom: 2vw;
+    }
+}
+
+
 @media screen and (max-width: 1100px) {
     /** HEADER **/
     div.header > div{
@@ -181,10 +238,23 @@ button:hover {
         flex-direction: column;
         margin-left: 5vw;
     }
-    div.Top div {
-        margin-top: 2rem;
+
+    div.Top > div {
+        align-items: center;
+    }
+
+    div.Top h2{
+        padding-bottom: 2vw;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    div.Top div {   
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
         margin-left: 0;
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
     .hollow {
         width: 90vw;
@@ -205,6 +275,8 @@ button:hover {
 
     div.ba h2 {
         padding-bottom: 2vw;
+        font-size: 2rem;
+        font-weight: bold;
     }
 
     div.hobbies div{
@@ -218,12 +290,18 @@ button:hover {
 
     div.blo h2 {
         padding-bottom: 2vw;
+        font-size: 2rem;
+        font-weight: bold;
     }
 
     div.Top5 {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    div.Top5 p {
+        font-size: 1.5rem;
     }
 
     div.Top5 div {
@@ -240,10 +318,49 @@ button:hover {
     }
     
 }
+@media screen and (max-width: 937px) {
+    div.footer {
+        flex-direction: column-reverse;
+    }
+    div.links {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.button {
+        padding-top: 1.5vw;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 600px) {
     div.Top5 {
         flex-direction: row;
         justify-content: center;
+    }
+
+    .hamburger {
+        display: block; 
+    }
+
+    .menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        width: 6vh;
+        background-color: rgb(28, 193, 97);
+    }
+
+    .menu li {
+        display: flex;
+        text-align: center;
+        padding: 1rem 1;
+    }
+
+    .menu-toggle:checked + .hamburger + .menu {
+        display: flex; 
+        margin-right: 100px;
     }
 }
 
