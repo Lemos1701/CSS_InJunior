@@ -331,21 +331,16 @@ button:hover {
     }
 
     div.Top5 p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     div.Top5 div {
         height: 25vh;
-        width: 20vh; 
+        width: 14vh; 
         font-size: 0.8rem;
         box-sizing: border-box;
     }
-
-    div.hobbies {
-        display: flex;
-        width: 10vh;
-        height: 8vh;
-    }   
+   
     
     div.numeradas div {
         bottom: 75%;
